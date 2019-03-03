@@ -1,8 +1,8 @@
 <template>
     <div>
         <h1>Vue Router Demo App</h1>
-        <nav>
-            <router-link class='nav-item' v-for="(data,index) in routes" :key='index' v-bind:to = "data.path">{{data.name}}</router-link>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <router-link class='nav-link' v-for="(data,index) in routes" :key='index' v-bind:to = "data.path">{{data.name}}</router-link>
         </nav>
         <div class="container">
             <router-view></router-view>

@@ -37549,10 +37549,11 @@ var render = function() {
     _vm._v(" "),
     _c(
       "nav",
+      { staticClass: "navbar navbar-expand-lg navbar-light bg-light" },
       _vm._l(_vm.routes, function(data, index) {
         return _c(
           "router-link",
-          { key: index, staticClass: "nav-item", attrs: { to: data.path } },
+          { key: index, staticClass: "nav-link", attrs: { to: data.path } },
           [_vm._v(_vm._s(data.name))]
         )
       }),

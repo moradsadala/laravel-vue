@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 import App from './components/App';
 import Hello from './components/Hello';
 import Home from './components/Home';
+import BootstrapVue from 'bootstrap-vue'
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -31,8 +32,9 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-Vue.use(VueRouter,app)
-
+Vue.use(VueRouter,app,BootstrapVue)
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 const router = new VueRouter({
     mode: 'history',
     routes: [
